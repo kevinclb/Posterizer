@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C9BA411251FFADC007645F2 /* Posterizer BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9BA410251FFADC007645F2 /* Posterizer BG.png */; };
+		8CC5988E252297A700380E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5988D252297A700380E2F /* LaunchScreen.storyboard */; };
 		8CE835B3251FF6BF00676BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B2251FF6BF00676BB7 /* AppDelegate.swift */; };
 		8CE835B5251FF6BF00676BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */; };
 		8CE835B7251FF6BF00676BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B6251FF6BF00676BB7 /* ViewController.swift */; };
 		8CE835BA251FF6BF00676BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE835B8251FF6BF00676BB7 /* Main.storyboard */; };
 		8CE835BC251FF6C100676BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE835BB251FF6C100676BB7 /* Assets.xcassets */; };
-		8CE835BF251FF6C100676BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE835BD251FF6C100676BB7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C9BA410251FFADC007645F2 /* Posterizer BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Posterizer BG.png"; sourceTree = "<group>"; };
+		8CC5988D252297A700380E2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE835AF251FF6BF00676BB7 /* Posterizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posterizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE835B2251FF6BF00676BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CE835B6251FF6BF00676BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CE835B9251FF6BF00676BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE835BB251FF6C100676BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8CE835BE251FF6C100676BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE835C0251FF6C100676BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +62,9 @@
 				8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */,
 				8CE835B6251FF6BF00676BB7 /* ViewController.swift */,
 				8CE835B8251FF6BF00676BB7 /* Main.storyboard */,
+				8CC5988D252297A700380E2F /* LaunchScreen.storyboard */,
 				8CE835BB251FF6C100676BB7 /* Assets.xcassets */,
-				8CE835BD251FF6C100676BB7 /* LaunchScreen.storyboard */,
+				8C9BA410251FFADC007645F2 /* Posterizer BG.png */,
 				8CE835C0251FF6C100676BB7 /* Info.plist */,
 			);
 			path = Posterizer;
@@ -94,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Kevin Babou";
 				TargetAttributes = {
 					8CE835AE251FF6BF00676BB7 = {
@@ -125,8 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE835BF251FF6C100676BB7 /* LaunchScreen.storyboard in Resources */,
+				8C9BA411251FFADC007645F2 /* Posterizer BG.png in Resources */,
 				8CE835BC251FF6C100676BB7 /* Assets.xcassets in Resources */,
+				8CC5988E252297A700380E2F /* LaunchScreen.storyboard in Resources */,
 				8CE835BA251FF6BF00676BB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,14 +157,6 @@
 				8CE835B9251FF6BF00676BB7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8CE835BD251FF6C100676BB7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CE835BE251FF6C100676BB7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -192,6 +188,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +249,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2WQ2PWWVJ;
 				INFOPLIST_FILE = Posterizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2WQ2PWWVJ;
 				INFOPLIST_FILE = Posterizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
