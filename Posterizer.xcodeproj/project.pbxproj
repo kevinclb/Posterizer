@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A5C7141265258244DA9315 /* Pods_Posterizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A942F2CD97D622999F956FBE /* Pods_Posterizer.framework */; };
 		8C9BA411251FFADC007645F2 /* Posterizer BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9BA410251FFADC007645F2 /* Posterizer BG.png */; };
 		8CC5988E252297A700380E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5988D252297A700380E2F /* LaunchScreen.storyboard */; };
+		8CC5989B2522BF2500380E2F /* russ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5989A2522BF2500380E2F /* russ.jpeg */; };
+		8CC5989F2522BFE300380E2F /* tyler herro.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5989E2522BFE300380E2F /* tyler herro.jpeg */; };
 		8CE835B3251FF6BF00676BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B2251FF6BF00676BB7 /* AppDelegate.swift */; };
 		8CE835B5251FF6BF00676BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */; };
 		8CE835B7251FF6BF00676BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE835B6251FF6BF00676BB7 /* ViewController.swift */; };
@@ -19,6 +22,8 @@
 /* Begin PBXFileReference section */
 		8C9BA410251FFADC007645F2 /* Posterizer BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Posterizer BG.png"; sourceTree = "<group>"; };
 		8CC5988D252297A700380E2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CC5989A2522BF2500380E2F /* russ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = russ.jpeg; sourceTree = "<group>"; };
+		8CC5989E2522BFE300380E2F /* tyler herro.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tyler herro.jpeg"; sourceTree = "<group>"; };
 		8CE835AF251FF6BF00676BB7 /* Posterizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posterizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE835B2251FF6BF00676BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		8CE835B9251FF6BF00676BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE835BB251FF6C100676BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE835C0251FF6C100676BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A942F2CD97D622999F956FBE /* Pods_Posterizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Posterizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C880EF540A37D061E8776468 /* Pods-Posterizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Posterizer.debug.xcconfig"; path = "Target Support Files/Pods-Posterizer/Pods-Posterizer.debug.xcconfig"; sourceTree = "<group>"; };
+		D6F13C55625378554A32FE03 /* Pods-Posterizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Posterizer.release.xcconfig"; path = "Target Support Files/Pods-Posterizer/Pods-Posterizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A5C7141265258244DA9315 /* Pods_Posterizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207791B2001C8563F613D614 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C880EF540A37D061E8776468 /* Pods-Posterizer.debug.xcconfig */,
+				D6F13C55625378554A32FE03 /* Pods-Posterizer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8CE835A6251FF6BF00676BB7 = {
 			isa = PBXGroup;
 			children = (
 				8CE835B1251FF6BF00676BB7 /* Posterizer */,
 				8CE835B0251FF6BF00676BB7 /* Products */,
+				207791B2001C8563F613D614 /* Pods */,
+				D53EC6863361FB9D73084AD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +85,20 @@
 				8CE835B8251FF6BF00676BB7 /* Main.storyboard */,
 				8CC5988D252297A700380E2F /* LaunchScreen.storyboard */,
 				8CE835BB251FF6C100676BB7 /* Assets.xcassets */,
+				8CC5989E2522BFE300380E2F /* tyler herro.jpeg */,
+				8CC5989A2522BF2500380E2F /* russ.jpeg */,
 				8C9BA410251FFADC007645F2 /* Posterizer BG.png */,
 				8CE835C0251FF6C100676BB7 /* Info.plist */,
 			);
 			path = Posterizer;
+			sourceTree = "<group>";
+		};
+		D53EC6863361FB9D73084AD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A942F2CD97D622999F956FBE /* Pods_Posterizer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CE835C3251FF6C100676BB7 /* Build configuration list for PBXNativeTarget "Posterizer" */;
 			buildPhases = (
+				C0688397ACB8ED26B8C30F08 /* [CP] Check Pods Manifest.lock */,
 				8CE835AB251FF6BF00676BB7 /* Sources */,
 				8CE835AC251FF6BF00676BB7 /* Frameworks */,
 				8CE835AD251FF6BF00676BB7 /* Resources */,
+				79A6C7AF478B835ED3583F12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,13 +162,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9BA411251FFADC007645F2 /* Posterizer BG.png in Resources */,
+				8CC5989B2522BF2500380E2F /* russ.jpeg in Resources */,
 				8CE835BC251FF6C100676BB7 /* Assets.xcassets in Resources */,
 				8CC5988E252297A700380E2F /* LaunchScreen.storyboard in Resources */,
+				8CC5989F2522BFE300380E2F /* tyler herro.jpeg in Resources */,
 				8CE835BA251FF6BF00676BB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79A6C7AF478B835ED3583F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Posterizer/Pods-Posterizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Posterizer/Pods-Posterizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Posterizer/Pods-Posterizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0688397ACB8ED26B8C30F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Posterizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CE835AB251FF6BF00676BB7 /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		8CE835C4251FF6C100676BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C880EF540A37D061E8776468 /* Pods-Posterizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +377,7 @@
 		};
 		8CE835C5251FF6C100676BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F13C55625378554A32FE03 /* Pods-Posterizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
