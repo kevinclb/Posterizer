@@ -8,67 +8,69 @@
 import SideMenu
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MenuControllerDelegate {
     
-    private let sideMenu = SideMenuNavigationController(rootViewController: MenuController(with: ["Home","Info","Settings"]))
     
-    @IBAction func didTapMenuButton(){
-        present(sideMenu, animated: true)
-    }
+    
+    
+    
+    private var sideMenu: SideMenuNavigationController?
+    
+    private let settingsController = SettingsViewController()
+    private let infoController = InfoViewController()
     
     override func viewDidLoad() {
-        sideMenu.leftSide = true
+        let menu =  MenuController(with: ["Home","Info","Settings"])
+        
+        menu.delegate = self
+        
+        sideMenu = SideMenuNavigationController(rootViewController: menu)
+        sideMenu?.leftSide = true
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         SideMenuManager.default.addPanGestureToPresent(toView: view)
         
-    }
-    
-
-
-}
-
-class MenuController: UITableViewController{
-    private let menuItems: [String]
-    private let graycolor = UIColor(displayP3Red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.backgroundColor = graycolor
-        view.backgroundColor = graycolor
-    }
-    
-    
-    
-    init(with menuItems: [String]){
-        self.menuItems = menuItems
-        super.init(nibName: nil, bundle: nil)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        addChildControllers()
         
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    private func addChildControllers(){
+        addChild(settingsController)
+        addChild(infoController)
+        view.addSubview(settingsController.view)
+        view.addSubview(infoController.view)
+        settingsController.view.frame = view.bounds
+        infoController.view.frame = view.bounds
+        
+        settingsController.didMove(toParent: self)
+        infoController.didMove(toParent: self)
+        
+        settingsController.view.isHidden = true
+        infoController.view.isHidden = true
+    }
+    @IBAction func didTapMenuButton(){
+        present(sideMenu!, animated: true)
     }
     
-    
-    // Table
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItems.count
+    func didSelectMenuItem(named: String) {
+        sideMenu?.dismiss(animated: true, completion: { [weak self] in
+            
+            self?.title = named
+            if named == "home" {
+                self?.settingsController.view.isHidden = true
+                self?.infoController.view.isHidden = true
+            }
+            else if named == "Info"{
+                self?.settingsController.view.isHidden = true
+                self?.infoController.view.isHidden = false
+            }
+            else if named == "Settings"{
+                self?.settingsController.view.isHidden = false
+                self?.infoController.view.isHidden = true
+            }
+        })
     }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = menuItems[indexPath.row]
-        cell.textLabel?.textColor = .white
-        cell.backgroundColor = graycolor
-        cell.contentView.backgroundColor = graycolor
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        // Relay to delegate about menu item selection
-    }
+
+
 }
+
+

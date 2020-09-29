@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		53A5C7141265258244DA9315 /* Pods_Posterizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A942F2CD97D622999F956FBE /* Pods_Posterizer.framework */; };
+		8C7D699C2522FEB90004BB86 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D699B2522FEB90004BB86 /* SideMenu.swift */; };
+		8C7D69A0252300430004BB86 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D699F252300430004BB86 /* InfoViewController.swift */; };
+		8C7D69A3252300680004BB86 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D69A2252300680004BB86 /* SettingsViewController.swift */; };
 		8C9BA411251FFADC007645F2 /* Posterizer BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9BA410251FFADC007645F2 /* Posterizer BG.png */; };
 		8CC5988E252297A700380E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5988D252297A700380E2F /* LaunchScreen.storyboard */; };
 		8CC5989B2522BF2500380E2F /* russ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5989A2522BF2500380E2F /* russ.jpeg */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C7D699B2522FEB90004BB86 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		8C7D699F252300430004BB86 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8C7D69A2252300680004BB86 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8C9BA410251FFADC007645F2 /* Posterizer BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Posterizer BG.png"; sourceTree = "<group>"; };
 		8CC5988D252297A700380E2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC5989A2522BF2500380E2F /* russ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = russ.jpeg; sourceTree = "<group>"; };
@@ -54,7 +60,6 @@
 				C880EF540A37D061E8776468 /* Pods-Posterizer.debug.xcconfig */,
 				D6F13C55625378554A32FE03 /* Pods-Posterizer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +84,7 @@
 		8CE835B1251FF6BF00676BB7 /* Posterizer */ = {
 			isa = PBXGroup;
 			children = (
+				8C7D699B2522FEB90004BB86 /* SideMenu.swift */,
 				8CE835B2251FF6BF00676BB7 /* AppDelegate.swift */,
 				8CE835B4251FF6BF00676BB7 /* SceneDelegate.swift */,
 				8CE835B6251FF6BF00676BB7 /* ViewController.swift */,
@@ -89,6 +95,8 @@
 				8CC5989A2522BF2500380E2F /* russ.jpeg */,
 				8C9BA410251FFADC007645F2 /* Posterizer BG.png */,
 				8CE835C0251FF6C100676BB7 /* Info.plist */,
+				8C7D699F252300430004BB86 /* InfoViewController.swift */,
+				8C7D69A2252300680004BB86 /* SettingsViewController.swift */,
 			);
 			path = Posterizer;
 			sourceTree = "<group>";
@@ -222,6 +230,9 @@
 				8CE835B7251FF6BF00676BB7 /* ViewController.swift in Sources */,
 				8CE835B3251FF6BF00676BB7 /* AppDelegate.swift in Sources */,
 				8CE835B5251FF6BF00676BB7 /* SceneDelegate.swift in Sources */,
+				8C7D699C2522FEB90004BB86 /* SideMenu.swift in Sources */,
+				8C7D69A0252300430004BB86 /* InfoViewController.swift in Sources */,
+				8C7D69A3252300680004BB86 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
